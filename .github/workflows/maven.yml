@@ -26,4 +26,4 @@ jobs:
         cache: maven
 
     - name: Step 3 - Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file TIP/EMaaS_RestfulListener/github-action-demo/pom.xml
