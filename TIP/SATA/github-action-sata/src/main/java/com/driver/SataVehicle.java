@@ -4,7 +4,7 @@ package com.driver;
  * @date: 2022/9/20
  * @author: hcj
  */
-public class Vehicle {
+public class SataVehicle {
     private int milesPerGallon;
     private double gallonsOfGas;
     private int odometer;
