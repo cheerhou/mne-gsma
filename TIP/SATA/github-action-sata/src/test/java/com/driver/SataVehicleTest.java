@@ -8,8 +8,8 @@ import static org.testng.Assert.*;
  * @date: 2022/9/20
  * @author: hcj
  */
-public class VehicleTest {
-    Vehicle vehicle;
+public class SataVehicleTest {
+    SataVehicle sataVehicle;
 
     @Test
     public void go_increasesOdometerBy100AndDecreasesGallonsOfGasBy5WhenMilesPerGallonIs20() {
@@ -19,19 +19,19 @@ public class VehicleTest {
     }
 
     private void givenVehicleHas0Odometer15GallonsOfGasAnd20MilesPerGallon() {
-        vehicle = new Vehicle();
-        vehicle.setGallonsOfGas(15);
-        vehicle.setOdometer(0);
-        vehicle.setMilesPerGallon(20);
+        sataVehicle = new SataVehicle();
+        sataVehicle.setGallonsOfGas(15);
+        sataVehicle.setOdometer(0);
+        sataVehicle.setMilesPerGallon(20);
     }
 
     private void whenDrive100() {
-        vehicle.go(100);
+        sataVehicle.go(100);
     }
 
     private void thenOdometerIncreasesBy100AndGallonsOfGasDecreasesBy5() {
-        assertEquals(10, vehicle.getGallonsOfGas());
-        assertEquals(105, vehicle.getOdometer());
+        assertEquals(10, sataVehicle.getGallonsOfGas());
+        assertEquals(100, sataVehicle.getOdometer());
     }
 
 }
