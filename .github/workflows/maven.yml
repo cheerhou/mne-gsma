@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [ "main" ]
     paths:
-      - '/TIP/EMaaS_RestfulListener/github-action-demo/**'
+      - 'TIP/EMaaS_RestfulListener/github-action-demo/**'
 
 jobs:
   build:
